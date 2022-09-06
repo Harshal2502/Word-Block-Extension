@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+
+    <style>
+        body {
+            min-height: 19rem;
+            min-width: 25rem;
+            background-color: #EEEEEE;
+        }
+
+        .content {
+            width: 75%;
+            height: 68%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>All the Blacklisted Words:</h1>
+        <ul>
+            <li>corona</li>
+            <li>covid</li>
+            <li>pandemic</li>
+            <li>virus</li>
+        </ul>
+        <br>
+
+        <form action="" method="post" id="myForm">
+            <label for="newWord">Enter a word to blacklist it:</label>
+            <input type="text" name="newWord" id="newWord">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
